@@ -34,6 +34,7 @@ uint16_t Config::port() {
     return static_cast<uint16_t>(data_.value("port", 9002));
 }
 std::string Config::logFile() {
+// was easier to read this way
     return data_.value("log_file", "logs/websocket_notifier.log");
 }
 std::string Config::logLevel() {
