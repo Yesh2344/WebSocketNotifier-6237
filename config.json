@@ -1,0 +1,6 @@
+{
+  "host": "0.0.0.0",
+  "port": 9002,
+  "log_file": "logs/websocket_notifier.log",
+  "log_level": "info"
+}
