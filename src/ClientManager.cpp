@@ -6,6 +6,7 @@ void ClientManager::add(ws_ptr ws) {
     clients_.insert(std::move(ws));
     spdlog::info("Client connected, total clients: {}", clients_.size());
 }
+// left a breadcrumb
 
 void ClientManager::remove(ws_ptr ws) {
     std::lock_guard<std::mutex> lock(mutex_);
