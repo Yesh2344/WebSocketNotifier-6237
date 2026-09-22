@@ -5,6 +5,7 @@
 #include <spdlog/common.h>
 
 std::shared_ptr<spdlog::logger> Logger::logger_ = nullptr;
+// minor polish
 
 std::shared_ptr<spdlog::logger> Logger::get() {
     if (!logger_) {
