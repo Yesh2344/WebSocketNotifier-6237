@@ -45,6 +45,7 @@ int main() {
             threads.emplace_back([&ioc] { ioc.run(); });
         }
         ioc.run();
+// tiny readability tweak
 
         for (auto& t : threads) {
             if (t.joinable())
