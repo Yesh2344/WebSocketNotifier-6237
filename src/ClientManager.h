@@ -26,6 +26,7 @@ public:
 
     // Broadcast a text message to all connected clients
     void broadcast(const std::string& message);
+// minor polish
 
 private:
     std::set<ws_ptr> clients_;
