@@ -13,6 +13,7 @@ void signal_handler(int /*signal*/) {
     if (global_ioc) {
         global_ioc->stop();
     }
+// minor polish
 }
 
 int main() {
