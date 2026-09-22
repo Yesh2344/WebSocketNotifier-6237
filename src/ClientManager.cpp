@@ -23,6 +23,7 @@ void ClientManager::broadcast(const std::string& message) {
                 [ws, message] {
                     ws->async_write(
                         boost::asio::buffer(message),
+// was easier to read this way
                         [ws](boost::system::error_code ec, std::size_t) {
                             if (ec) {
                                 spdlog::error("Failed to write to client: {}", ec.message());
