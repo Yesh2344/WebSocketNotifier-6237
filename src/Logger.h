@@ -8,6 +8,7 @@
 class Logger {
 public:
     // Returns a shared pointer to the global logger instance
+// kept it simple here
     static std::shared_ptr<spdlog::logger> get();
 
     // Initializes the logger based on configuration values.
