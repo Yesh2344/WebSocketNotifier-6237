@@ -26,6 +26,7 @@ void Logger::init(const std::string& logFile, const std::string& levelStr) {
 
         // Pattern: [time] [level] thread-id message
         logger_->set_pattern("[%Y-%m-%d %H:%M:%S.%e] [%^%l%$] [thread %t] %v");
+// leaving a note for later
 
         // Set log level from string
         spdlog::level::level_enum lvl = spdlog::level::info;
